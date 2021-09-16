@@ -1,10 +1,10 @@
-import { createGenerateClassName } from '@material-ui/styles';
-import React, {useState} from 'react';
+
+import React from 'react';
 import TinderCard from 'react-tinder-card';
 import './tinderCards.css'
 
 function TinderCards() {
-    const [people, setPeople]= useState([
+    const people=[
         {
             name: 'Elon Musk',
             url: 'https://images.indianexpress.com/2020/11/elon-musk-bloomberg-1200.jpg'
@@ -13,7 +13,7 @@ function TinderCards() {
             name: 'Jeff Bezos',
             url:'https://pbs.twimg.com/profile_images/669103856106668033/UF3cgUk4_400x400.jpg'
         }
-    ]);
+    ];
 
     const swiped = (direction, nameToDelete) => {
         console.log('You swiped: ' + nameToDelete)
