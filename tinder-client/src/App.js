@@ -1,18 +1,27 @@
 
+import React from 'react'
 import './App.css';
-import Header from './header';
-import SwipeButtons from './swipeButtons';
-import TinderCards from './tinderCards';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+
+
+
+import Home from './pages/Home/home';
+import SignIn from './pages/SignIn/signIn';
+
 
 
 function App() {
   return (
-    <div className="App">
-    
-      <Header />
-      <TinderCards/>
-      <SwipeButtons/>
-    </div>
+    <Router>
+      <Routes>
+      <Route path='/' element={<SignIn />}></Route>
+      <Route path='home' element={<Home />}></Route>
+      </Routes>
+    </Router>
   );
 }
 
