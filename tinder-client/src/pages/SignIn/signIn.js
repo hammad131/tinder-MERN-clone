@@ -41,9 +41,9 @@ useEffect(() => {
           <form action="#">
              <h1>Log In</h1>
               <div className="social-media">
-                <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
+                {/* <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
                 <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-                <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
+                <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a> */}
               </div>
         <span>or sign up using your email account</span>
       <input type="text" placeholder="Email" required/>
@@ -57,12 +57,12 @@ useEffect(() => {
   <div className="overlay">
     <div className="overlay-panel left">
       <h1>Welcome Back!</h1>
-      <p>To keep connected with us please login with your personal info</p>
+      <p className='paragraph'>To keep connected with us please login with your personal info</p>
       <button className="ghost" id="signIn">Log In</button>          
     </div>
     <div className="overlay-panel right">
       <h1>Howdy, Stranger!</h1>
-      <p>Sign up for an account and start your journey now!!</p>
+      <p className='paragraph'>Sign up for an account and start your journey now!!</p>
       <button className="ghost" id="signUp">Sign Up</button>
     </div>
     </div>

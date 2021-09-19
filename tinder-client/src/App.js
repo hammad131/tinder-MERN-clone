@@ -11,6 +11,8 @@ import {
 
 import Home from './pages/Home/home';
 import SignIn from './pages/SignIn/signIn';
+import Chats from './pages/Chats/chats';
+
 
 
 
@@ -20,6 +22,8 @@ function App() {
       <Routes>
       <Route path='/' element={<SignIn />}></Route>
       <Route path='home' element={<Home />}></Route>
+      <Route path='/chats' element={<Chats/>}></Route>
+
       </Routes>
     </Router>
   );

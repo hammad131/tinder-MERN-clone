@@ -9,14 +9,14 @@
     overflow:hidden;
   }
   
-  a {
+  /* a {
     text-decoration: none;
     margin: 20px auto;
     color: inherit;
     font-size: 12px;
   }
-  
-  p {
+   */
+  .paragraph {
     font-size: 14px;
     font-weight: 100;
     line-height: 1.4;

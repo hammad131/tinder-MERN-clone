@@ -3,6 +3,7 @@ import './header.css'
 import PersonIcon from '@material-ui/icons/Person';
 import IconButton from '@material-ui/core/IconButton'
 import ForumIcon from '@material-ui/icons/Forum';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -17,10 +18,12 @@ function Header() {
                 alt=''>
                 </img>  
             
-
+            <Link to='/chats'>
             <IconButton>
                 <ForumIcon fontSize='large' className='header__icon'/>
             </IconButton>
+            </Link>
+            
             
         </div>
     )
